@@ -1,0 +1,31 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    /* Base */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    /* JS / TS Compatibility */
+    "allowJs": true,
+    "skipLibCheck": true,
+
+    /* Type Safety (balanced, not strict) */
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  },
+
+  /* 🔴 VERY IMPORTANT */
+  "exclude": [
+    "supabase/functions",
+    "node_modules",
+    "dist"
+  ]
+}
